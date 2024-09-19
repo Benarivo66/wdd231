@@ -1,0 +1,213 @@
+.lora-normal {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.outfit-normal {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --primary-color: #03390c;
+  --secondary-color: #ffffff;
+  --secondary-color-1:#191515;
+  --secondary-color-2: grey;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  background-color: var(--primary-color);
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 100px;
+  height: auto;
+  padding: 1rem;
+}
+h1 {
+  color: var(--secondary-color);
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+nav a {
+  display: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: white
+}
+nav a:hover {
+    text-decoration: underline double;
+  }
+#menu {
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  color: var(--secondary-color-1);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+#menu::before {
+  content: "☰";
+  color: var(--secondary-color);
+}
+#menu.open::before {
+  content: "x";
+}
+.open a {
+  display: block;
+}
+main,
+section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100%;
+}
+.course ul {
+  margin-left: 10%;
+}
+.course ul li{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+.place img {
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+.place span {
+  color: black;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.certificate div:first-of-type {
+  display: flex;
+  padding-bottom: 0.75rem;
+  justify-content: space-around;
+  border-bottom: solid 0.1px var(--secondary-color-2);
+}
+.certificate div button {
+  width: 30%;
+  text-align: center;
+  background-color: var(--secondary-color-1);
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
+.certificate div:nth-of-type(2) p {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+footer,
+footer p {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem
+}
+footer p span{
+    padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  header div{
+    justify-content: center;
+  }
+  header img{
+    width: 130px;
+  }
+  h1{
+    padding-left: 1rem;
+  }
+  #menu {
+    display: none;
+  }
+  nav{
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.25rem;
+    background-color: var(--secondary-color-1);
+  }
+  nav a {
+    display: block;
+    padding-left: 5%;
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  .active{
+    text-decoration:overline;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+  }
+  .course{
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .place{
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .certificate{
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  section{
+    border: solid 1px ;
+    box-shadow: 5px 5px 5px 5px rgb(171, 166, 166);
+  }
+  .certificate div:first-of-type{
+    justify-content: center;
+  }
+  .certificate div button{
+    width: 15%;
+    margin-left: 1rem;
+    padding: 0.5rem;
+  }
+  .certificate div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .certificate div:nth-of-type(2) p{
+    width: 30%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  footer p{
+    flex-direction: row;
+  }
+  footer p span{
+    margin-left: 0.5rem;
+  }
+}

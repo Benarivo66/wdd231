@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I, Anthony Izekor">
+    <meta name="author" content="Anthony Izekor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/author.webp" alt="Photo of Author">
+            <h1 class="lora-normal">Anthony E. Izekor</h1>
+        </div>
+        <button id="menu" aria-label="Menu"></button>    
+        <nav class="outfit-normal">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Github Profile</a>
+            <a href="#">LinkedIn</a>
+        </nav>
+    </header>
+    <main class="outfit-normal">
+        <section class="course">
+            <h2 class="lora-normal">Course Work</h2>
+            <ul>
+                <li>Web Frontend Development I</li>
+                <li>Software Engineering Principles</li>
+                <li>Family Lead and Resource Management</li>
+                <li>Web Frontend Development II</li>
+            </ul>
+        </section>
+        <section class="place">
+            <h2 class="lora-normal">Lagos, Nigeria</h2>
+            <img src="images/naija.webp" alt="Nigerian man carrying a flag">
+            <span>Round About</span>
+        </section>
+        <section class="certificate">
+            <h2 class="lora-normal">Web and Computer Programming Certificate</h2>
+            <div>
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div></div>
+            <div></div>
+        </section> 
+    </main>
+    <footer class="outfit-normal">
+        <p>
+            <span id="currentyear"></span> 
+            <span>Anthony Izekor</span>
+            <span>Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+</body>
+</html>
