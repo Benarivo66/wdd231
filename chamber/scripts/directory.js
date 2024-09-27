@@ -9,7 +9,7 @@ menu.addEventListener("click",()=>{
     navg.classList.toggle("open");
     menu.classList.toggle("open");
   });
-  const url="chamber/data/members.json";
+  const url="data/members.json";
   const main=document.querySelector("main");
   const cards=document.createElement("div");
   const lists=document.createElement("ul");

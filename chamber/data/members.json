@@ -4,7 +4,7 @@
       "address": "1234 Silicon Way, Suite 100, San Francisco, CA 94103",
       "phone": "+1-415-555-1234",
       "website": "https://www.techsolutions.com",
-      "image": "chamber/images/techsolution.jpeg",
+      "image": "images/techsolution.jpeg",
       "membership_level": 3,
       "other_info": {
         "founded": 2010,
@@ -17,7 +17,7 @@
       "address": "987 Eco Street, Denver, CO 80204",
       "phone": "+1-303-555-5678",
       "website": "https://www.greenenergycorp.com",
-      "image": "chamber/images/greenenergy.webp",
+      "image": "images/greenenergy.webp",
       "membership_level": 2,
       "other_info": {
         "founded": 2008,
@@ -30,7 +30,7 @@
       "address": "234 Wellness Blvd, Miami, FL 33101",
       "phone": "+1-305-555-7654",
       "website": "https://www.healthylifepharmacy.com",
-      "image": "chamber/images/healthylifepharmacy.jpg",
+      "image": "images/healthylifepharmacy.jpg",
       "membership_level": 1,
       "other_info": {
         "founded": 2015,
@@ -43,7 +43,7 @@
       "address": "5678 Creative Ave, Austin, TX 78701",
       "phone": "+1-512-555-1234",
       "website": "https://www.innovatedesign.com",
-      "image": "chamber/images/designstudio.webp",
+      "image": "images/designstudio.webp",
       "membership_level": 3,
       "other_info": {
         "founded": 2012,
@@ -56,7 +56,7 @@
       "address": "321 Factory Lane, Detroit, MI 48201",
       "phone": "+1-313-555-5678",
       "website": "https://www.ecotechmanufacturing.com",
-      "image": "chamber/images/ecotech.jpg",
+      "image": "images/ecotech.jpg",
       "membership_level": 2,
       "other_info": {
         "founded": 2000,
@@ -69,7 +69,7 @@
       "address": "456 Ocean Drive, Honolulu, HI 96815",
       "phone": "+1-808-555-8765",
       "website": "https://www.bluehorizontravel.com",
-      "image": "chamber/images/bluehorinzon.jpg",
+      "image": "images/bluehorinzon.jpg",
       "membership_level": 1,
       "other_info": {
         "founded": 1998,
@@ -82,7 +82,7 @@
       "address": "7890 Sky St, Seattle, WA 98101",
       "phone": "+1-206-555-0987",
       "website": "https://www.cloudwavetech.com",
-      "image": "chamber/images/cloudwavetech.jpg",
+      "image": "images/cloudwavetech.jpg",
       "membership_level": 3,
       "other_info": {
         "founded": 2005,
