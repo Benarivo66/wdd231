@@ -89,36 +89,36 @@
     content: "x";
   }
   #view::before{
-    content:"Change view to list";
-  }
-  #view.list::before{
     content:"Change view to grid";
+  }
+  #view.grid::before{
+    content:"Change view to list";
   }
   #view{
     margin:0.5rem;
     padding:0.5rem;
-    width: 12.5vw;
+    width: 13vw;
   }
-  main div{
+  main div.grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
-  main div div{
+  main div.grid div{
     margin:1rem;
   }
-  main div div p{
+  main div.grid div p{
     padding:0.5rem;
   }
-  main div div img{
+  main div.grid div img{
     width:200px;
     height:auto;
     padding:0.5rem;
   }
-  main div.list ul{
+  main div ul{
     display: flex;
     flex-direction:column;
   }
-  main div.list ul li{
+  main div ul li{
     padding:1rem;
   }
   footer{

@@ -21,15 +21,15 @@ menu.addEventListener("click",()=>{
       const data=await response.json();
         displayMembers(data);
       view.addEventListener("click",()=>{
-        view.classList.toggle("list");    
-        cards.classList.toggle("list");
+        view.classList.toggle("grid");    
+        cards.classList.toggle("grid");
         cards.innerHTML="";
         lists.innerHTML="";
         displayMembers(data);
       });}  
   const displayMembers=(members)=>{
       members.forEach(member=>{
-        if(view.classList.contains("list")){
+        if(view.classList.contains("grid") === false){
           const list=document.createElement("li");
           list.textContent=member.name;
           lists.appendChild(list);
