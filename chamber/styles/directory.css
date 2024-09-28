@@ -11,7 +11,6 @@
   :root {
     --primary-color: #022a09;
     --secondary-color: #ffffff;
-    --secondary-color-1:#191515;
   }
   * {
     margin: 0;
@@ -38,17 +37,17 @@
   header div:first-of-type div{
     display:flex;
     flex-direction: column;
-    margin:0.5rem;
+  }
+  header div:first-of-type div p{
+    margin-left: 2.2rem;
+    margin-bottom: 1.25rem;
   }
   header div:nth-of-type(2) img{
     width: 40px;
     height: auto;
   }
   nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
-
+    display: none;
   }
   nav span{
     display: flex;
@@ -67,6 +66,7 @@
     overflow: hidden;
   }
   nav.open{
+    display: grid;
     grid-template-rows: 1fr;
   }
   nav a:hover {
@@ -76,7 +76,7 @@
     background: none;
     border: 0;
     font-size: 2.5rem;
-    color: var(--secondary-color-1);
+    color: var(--secondary-color);
     position: absolute;
     right: 15%;
     top: 2.3rem;
@@ -95,8 +95,9 @@
     content:"Change view to grid";
   }
   #view{
-    margin:1% 50%;
+    margin:0.5rem;
     padding:0.5rem;
+    width: 12.5vw;
   }
   main div{
     display:grid;
@@ -152,6 +153,7 @@
         display: none;
       }
       nav{
+        display:grid;
         grid-template-rows: 1fr;
       }
       nav span{
