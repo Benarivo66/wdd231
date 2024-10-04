@@ -77,6 +77,24 @@ menu.addEventListener("click", () => {
   navg.classList.toggle("open");
   menu.classList.toggle("open");
 });
+const courseDetails = document.querySelector("#course-details");
+const displayCourseDetails = (course) => {
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+  <button id="closeModal">Close</button>
+  <h2>${course.subject}${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Certificate</strong>: ${course.certificate}</p>
+  <p>${course.description}</p>
+  <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+  `;
+  courseDetails.showModal();
+  const closeModal = document.querySelector("#closeModal");
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+};
 const courseCodes = document.querySelectorAll(".certificate div")[1];
 const displayCourses = (coursess) => {
   coursess.forEach((course) => {
@@ -90,12 +108,15 @@ const displayCourses = (coursess) => {
       p.style.color = "white";
     }
     p.textContent = `${course.subject} ${course.number}`;
+    p.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
     courseCodes.appendChild(p);
   });
 };
-document.addEventListener('DOMContentLoaded', ()=>{
-    displayCourses(courses);
-})
+document.addEventListener("DOMContentLoaded", () => {
+  displayCourses(courses);
+});
 const courseFilter = document.querySelectorAll(".certificate div button");
 const all = courseFilter[0];
 const cse = courseFilter[1];
@@ -105,16 +126,12 @@ all.addEventListener("click", (event) => {
   displayCourses(courses);
 });
 cse.addEventListener("click", (event) => {
-  const filteredCourses = courses.filter(
-    (course) => course.subject === "CSE"
-  );
+  const filteredCourses = courses.filter((course) => course.subject === "CSE");
   courseCodes.innerHTML = "";
   displayCourses(filteredCourses);
 });
 wdd.addEventListener("click", (event) => {
-  const filteredCourses = courses.filter(
-    (course) => course.subject === "WDD"
-  );
+  const filteredCourses = courses.filter((course) => course.subject === "WDD");
   courseCodes.innerHTML = "";
   displayCourses(filteredCourses);
 });
@@ -124,6 +141,3 @@ const totalCredits = courses.reduce((a, b) => a + b.credits, 0);
 span.innerHTML = `Total number of credits required is ${totalCredits}`;
 totalCreditDiv.appendChild(span);
 totalCreditDiv.style.margin = "1rem";
-
-
-

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory Page</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I: Chambers Directory Page">
+    <title>Chamber Home Page</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I: Chambers Home Page">
     <meta name="author" content="Anthony Izekor">
-    <meta property="og:title" content="Anthony Izekor - Chamber Directory Page">
+    <meta property="og:title" content="Anthony Izekor - Chamber Home Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://benarivo66.github.io/wdd231/chamber/images/lekki.jpg">
     <meta property="og:url" content="https://benarivo66.github.io/wdd231/chamber/directory.html">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header class="outfit-normal">
@@ -30,7 +30,7 @@
         <div>
             <nav id="animateme">
                 <span>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Discover</a>
@@ -43,8 +43,45 @@
         </div>
     </header>
     <main class="outfit-normal">
-        <div class="main">
+        
+        <section class="hero">
+            <h2>Empowering Local Businesses</h2>
+            <p>Join our network of leaders driving growth in the local market</p>
+            <a href="#" class="cta">Join Us</a>
+        </section>
+        <div class="container">
+        <section class="event">
+            <h2>Upcoming Events</h2>
+            <div class="eventdetails">
+                <h3>Business Growth Workshop</h3>
+                <p >A hands-on workshop led by experts in business development, designed to help business owners enhance their marketing, operations, and financial strategies.</p>
+                <div>
+                    <p><span><strong>Venue:</strong></span> <span>Community Business Center, 456 Market Street</span></p>
+                    <p><span><strong>Speakers:</strong></span> <span>Aliko Otedola, Elon Gates, Bill Musk</span></p>
+                    <p><span><strong>Target Audience:</strong></span> <span>Business owners and new Entrepreneurs</span></p>
+                    <p><span><strong>Registration:</strong></span> <span>Free for members. $50 for non-members.</span></p>
+                </div>
+            </div>
             
+        </section>
+        <section class="weather">
+            <div class="currentweather">
+                <h2>Current Weather</h2>
+                <div>
+                    <img id="weatherIcon" src="" alt="">
+                        <p id="weatherTemp"></p>
+                        <p id="weatherDesc"></p>
+                        <p id="humidity"></p>
+                        <p id="place"></p>
+                </div>
+            </div>
+            <div class="weatherforecast">
+                <h2>Weather Forecast</h2>
+            </div>
+        </section>
+        <section class="spotlight">
+            <h2>Star Members</h2>
+        </section>
         </div>
     </main>
     <footer class="outfit-normal">

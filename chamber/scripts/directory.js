@@ -10,7 +10,7 @@ menu.addEventListener("click",()=>{
     menu.classList.toggle("open");
   });
   const url="data/members.json";
-  const main=document.querySelector("main");
+  const main=document.querySelector(".main");
   const cards=document.createElement("div");
   const lists=document.createElement("ul");
   const view=document.createElement("button");

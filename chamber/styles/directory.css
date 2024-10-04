@@ -11,6 +11,7 @@
   :root {
     --primary-color: #022a09;
     --secondary-color: #ffffff;
+    --tertiary-color: rgb(236, 243, 241);
   }
   * {
     margin: 0;
@@ -99,28 +100,122 @@
     padding:0.5rem;
     width: 13vw;
   }
-  main div.grid{
+  .main div.grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
-  main div.grid div{
+  .main div.grid div{
     margin:1rem;
   }
-  main div.grid div p{
+  .main div.grid div p{
     padding:0.5rem;
   }
-  main div.grid div img{
+  .main div.grid div img{
     width:200px;
     height:auto;
     padding:0.5rem;
   }
-  main div ul{
+  .main div ul{
     display: flex;
     flex-direction:column;
   }
-  main div ul li{
+  .main div ul li{
     padding:1rem;
   }
+
+  /* CHAMBER HOME PAGE */
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/hero.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    width: 100%;
+    font-size:120%;
+  }
+  .hero *{
+    margin: 1rem 0;
+  }
+  .event, .weather, .spotlight{
+    margin: 1rem;
+  }
+  .event{
+    display:flex;
+    flex-direction: column;
+  }
+  .event h2, .weather h2{
+    text-align: center;
+  }
+  .event h3{
+    margin-left:1rem;
+  }
+  .event div *{
+    padding:0.5rem;
+  }
+  .event div p:first-of-type{
+    padding-left: 1.5rem;
+  }
+  .eventdetails div{
+    display:grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 20px;
+    align-items: start;
+    margin-top: 20px;
+  }
+  .eventdetails div p{
+    display: contents;
+  }
+  .eventdetails div p span:first-child{
+    grid-column: 1;
+  }
+  .eventdetails div p span:last-child{
+    grid-column: 2;
+  }
+  h1, h2{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin:1rem;
+    padding:1rem;
+    border-radius: 10px;
+  }
+  .weather{
+    background-color: var(--tertiary-color);
+  }
+  .currentweather div, .weatherforecast div{
+    padding:1rem;
+  }
+  .currentweather div img{
+    width: 75px;
+    height: auto;
+  }
+  .currentweather div p, .weatherforecast div p{
+    padding:1rem;
+    font-size: 125%;
+  }
+  .starMembers{
+    margin:1rem;
+  }
+  .starMembers div{
+    padding:1rem 2rem;
+    margin:1rem;
+    border:1px solid var(--primary-color);
+    border-radius:10px;
+    background-color: var(--tertiary-color);
+  }
+  .starMembers div *{
+    padding-bottom:1rem;
+  }
+  .starMembers div p{
+    font-size: 1rem;
+  }
+  .starMembers img{
+    width:80px;
+    height:auto;
+  }
+
   footer{
     display:flex;
     justify-content: space-between;
@@ -174,5 +269,27 @@
       footer div:nth-of-type(2){
         flex-direction: row;
       }
+
+      /* CHAMBER HOME PAGE */
+      .container, .weather, .starMembers{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+      }  
+      .hero h2{
+        width: 52.5vw;
+      }
+      h2{
+        width:30vw;
+        text-align: center;
+      }
+      .weather{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100vw;
+      }
   }
+  
+
   

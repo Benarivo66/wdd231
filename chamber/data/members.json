@@ -6,6 +6,7 @@
       "website": "https://www.techsolutions.com",
       "image": "images/techsolution.jpeg",
       "membership_level": "Bronze",
+      "logo": "images/amtech.svg",
       "other_info": {
         "founded": 2010,
         "CEO": "Jane Doe",
@@ -19,6 +20,7 @@
       "website": "https://www.greenenergycorp.com",
       "image": "images/greenenergy.webp",
       "membership_level": "Silver",
+      "logo": "images/stussy.svg",
       "other_info": {
         "founded": 2008,
         "CEO": "John Smith",
@@ -32,6 +34,7 @@
       "website": "https://www.healthylifepharmacy.com",
       "image": "images/healthylifepharmacy.jpg",
       "membership_level": "Gold",
+      "logo": "images/max.svg",
       "other_info": {
         "founded": 2015,
         "CEO": "Angela Lee",
@@ -45,6 +48,7 @@
       "website": "https://www.innovatedesign.com",
       "image": "images/designstudio.webp",
       "membership_level": "Bronze",
+      "logo": "images/ivk.svg",
       "other_info": {
         "founded": 2012,
         "CEO": "Michael Reynolds",
@@ -52,12 +56,13 @@
       }
     },
     {
-      "name": "EcoTech Manufacturing",
+      "name": "Hubspot",
       "address": "321 Factory Lane, Detroit, MI 48201",
       "phone": "+1-313-555-5678",
       "website": "https://www.ecotechmanufacturing.com",
       "image": "images/ecotech.jpg",
       "membership_level": "Silver",
+      "logo": "images/hubspot.svg",
       "other_info": {
         "founded": 2000,
         "CEO": "Sarah Connor",
@@ -71,6 +76,7 @@
       "website": "https://www.bluehorizontravel.com",
       "image": "images/bluehorinzon.jpg",
       "membership_level": "Gold",
+      "logo": "images/tibco.svg",
       "other_info": {
         "founded": 1998,
         "CEO": "Tom Harris",
@@ -84,6 +90,7 @@
       "website": "https://www.cloudwavetech.com",
       "image": "images/cloudwavetech.jpg",
       "membership_level": "Bronze",
+      "logo": "images/ac.svg",
       "other_info": {
         "founded": 2005,
         "CEO": "Emily Stone",
