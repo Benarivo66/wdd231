@@ -11,7 +11,6 @@ menu.addEventListener("click", () => {
 });
 const showInfo = document.querySelector("#results");
 const url = window.location.href;
-console.log(url);
 const everything = url.split("?");
 let formData = everything[1].split("&");
 function show(field){

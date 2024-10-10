@@ -72,7 +72,7 @@
                 name="organizational-title" 
                 title="Please enter your organizational-title(minimum 7 characters, only letters, hyphens, and spaces are allowed)"
                 pattern="[A-Za-z\s\-]{7,}"
-                autocomplete="organizational-title">
+                autocomplete="organization-title">
             </label>
         </div>
         <div class="container">    
@@ -108,18 +108,18 @@
         </div>
             <div id="membership_level" class="container">
                 <p>Membership Level:</p>
-                <label for="np"><input id="np" type="radio"> NP</label>
-                <label for="bronze"><input id="bronze" type="radio"> Bronze</label>
-                <label for="silver"><input id="silver" type="radio"> Silver</label>
-                <label for="gold"><input id="gold" type="radio"> Gold</label>
+                <label for="npradio"><input id="npradio" type="radio"> NP</label>
+                <label for="bronzeradio"><input id="bronzeradio" type="radio"> Bronze</label>
+                <label for="silverradio"><input id="silverradio" type="radio"> Silver</label>
+                <label for="goldradio"><input id="goldradio" type="radio"> Gold</label>
             </div>
-            <div id="description" class="container">
+            <div class="container">
                 <label for="description">Business Description:
                     <textarea name="description" id="description"></textarea>
                 </label>
             </div>
-            <div id="timestamp">
-                <label for="timestamp">
+            <div>
+                <label>
                     <input type="hidden" 
                     id="timestamp" 
                     name="timestamp">

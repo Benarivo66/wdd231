@@ -41,7 +41,7 @@ const displayMembershipDetails = (event)=>{
 document.querySelectorAll('.membership_info a').forEach(a=>{
     a.addEventListener('click', displayMembershipDetails);
 });
-const hiddenInput = document.querySelector('#timestamp label input[type="hidden"]');
+const hiddenInput = document.querySelector('input[type="hidden"]');
 const d = new Date();
 const isoDate = d.toISOString();
 hiddenInput.value = isoDate;
