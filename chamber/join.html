@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Membership Join Page</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I: Chambers Membership Join Page">
+    <meta name="author" content="Anthony Izekor">
+    <meta property="og:title" content="Anthony Izekor - Chamber Membership Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://benarivo66.github.io/wdd231/chamber/images/lekki.jpg">
+    <meta property="og:url" content="https://benarivo66.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header class="outfit-normal">
+        <div>
+            <img src="images/biz_img.webp" loading="lazy" alt="business image">
+            <div>
+                <h1 class="lora-normal">Benarivo</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div>
+            <nav id="animateme">
+                <span>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </span>
+            </nav>
+            <span>
+                <img src="images/bell.png" loading="lazy" alt="business icon">
+            </span>
+            <button id="menu" aria-label="Menu"></button>
+        </div>
+    </header>
+    <main class="outfit-normal">
+    <div class="wrapper">
+        <form method="get" action="thankyou.html">
+            <div class="container">
+                <label for="first-name">First Name:
+                    <input type="text" 
+                    id="first-name" 
+                    name="first-name" 
+                    title="Please enter your first name" 
+                    required
+                    autocomplete="given-name">
+                </label>
+        </div>
+        <div class="container">
+            <label for="last-name">Last Name:
+                <input type="text" 
+                id="last-name" 
+                name="last-name" 
+                title="Please enter your last name" 
+                required
+                autocomplete="family-name">
+            </label>
+        </div>
+        <div class="container">    
+            <label for="organizational-title">Organizational Title:
+                <input type="text" 
+                id="organizational-title" 
+                name="organizational-title" 
+                title="Please enter your organizational-title(minimum 7 characters, only letters, hyphens, and spaces are allowed)"
+                pattern="[A-Za-z\s\-]{7,}"
+                autocomplete="organizational-title">
+            </label>
+        </div>
+        <div class="container">    
+            <label for="email">Email:
+                <input type="email" 
+                id="email" 
+                name="email" 
+                title="Please enter your email"
+                placeholder="aie@example.com"
+                autocomplete="email"
+                required>
+            </label>
+        </div>
+        <div class="container">    
+            <label for="telephone">Phone:
+                <input type="tel" 
+                id="telephone" 
+                name="telephone" 
+                title="Please enter your phone number"
+                autocomplete="tel"
+                required>
+            </label>
+        </div>
+        <div class="container">
+            <label for="business-name">Business Name:
+                <input type="text" 
+                id="business-name" 
+                name="business-name" 
+                title="Please enter your business name"
+                required
+                autocomplete="organization">
+            </label>
+        </div>
+            <div id="membership_level" class="container">
+                <p>Membership Level:</p>
+                <label for="np"><input id="np" type="radio"> NP</label>
+                <label for="bronze"><input id="bronze" type="radio"> Bronze</label>
+                <label for="silver"><input id="silver" type="radio"> Silver</label>
+                <label for="gold"><input id="gold" type="radio"> Gold</label>
+            </div>
+            <div id="description" class="container">
+                <label for="description">Business Description:
+                    <textarea name="description" id="description"></textarea>
+                </label>
+            </div>
+            <div id="timestamp">
+                <label for="timestamp">
+                    <input type="hidden" 
+                    id="timestamp" 
+                    name="timestamp">
+                </label>
+            </div>
+            <input type="submit" value="Apply to Join Us"/>
+        </form>
+        <div class="membership_info">
+            <div>
+                <p>Non Profit Membership Level</p>
+                <a id="np" href="#">Learn More</a>
+            </div>
+            <div>
+                <p>Bronze Membership Level</p>
+                <a id="bronze" href="#">Learn More</a>
+            </div>
+            <div>
+                <p>Silver Membership Level</p>
+                <a id="silver" href="#">Learn More</a>
+            </div>
+            <div>
+                <p>Gold Membership Level</p>
+                <a id="gold" href="#">Learn More</a>
+            </div>
+            <dialog id="membership-details"></dialog>
+        </div>
+    </div>
+    </main>
+    <footer class="outfit-normal">
+        <div>
+            <p><strong>Benarivo Chamber of Commerce</strong></p>
+            <p>11 Herbert Macaulay</p>
+            <p>Yaba, Lagos State, Nigeria 100252</p>
+            <p>benarivo66@gmail.com</p>
+            <p>+2347038888582</p>
+        </div>
+        <div>
+            <img src="images/twitter.png" loading="lazy" alt="twitter icon">
+            <img src="images/instagram.png" loading="lazy" alt="instagram icon">
+            <img src="images/youtube.png" loading="lazy" alt="youtube icon">
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Anthony E. Izekor</p>
+            <p id="currentyear"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

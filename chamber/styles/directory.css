@@ -1,295 +1,456 @@
 .lora-normal {
-    font-family: "Lora", serif;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.outfit-normal {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --primary-color: #022a09;
+  --secondary-color: #ffffff;
+  --tertiary-color: rgb(236, 243, 241);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+header div:first-of-type,
+header div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div:first-of-type img {
+  width: 80px;
+  height: auto;
+}
+header div:first-of-type div {
+  display: flex;
+  flex-direction: column;
+}
+header div:first-of-type div p {
+  margin-left: 2.2rem;
+  margin-bottom: 1.25rem;
+}
+header div:nth-of-type(2) img {
+  width: 40px;
+  height: auto;
+}
+nav {
+  display: none;
+}
+nav span {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem 3.5rem;
+  background-color: var(--primary-color);
+}
+nav a {
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+nav span {
+  overflow: hidden;
+}
+nav.open {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+nav a:hover {
+  text-decoration: underline double;
+}
+#menu {
+  background: none;
+  border: 0;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  position: absolute;
+  right: 15%;
+  top: 2.3rem;
+}
+#menu::before {
+  content: "☰";
+  color: var(--secondary-color);
+}
+#menu.open::before {
+  content: "x";
+}
+#view::before {
+  content: "Change view to grid";
+}
+#view.grid::before {
+  content: "Change view to list";
+}
+#view {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 13vw;
+}
+.main div.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.main div.grid div {
+  margin: 1rem;
+}
+.main div.grid div p {
+  padding: 0.5rem;
+}
+.main div.grid div img {
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+}
+.main div ul {
+  display: flex;
+  flex-direction: column;
+}
+.main div ul li {
+  padding: 1rem;
+}
+
+/* CHAMBER HOME PAGE */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 120%;
+}
+.hero * {
+  margin: 1rem 0;
+}
+.event,
+.weather,
+.spotlight {
+  margin: 1rem;
+}
+.event {
+  display: flex;
+  flex-direction: column;
+}
+.event h2,
+.weather h2 {
+  text-align: center;
+}
+.event h3 {
+  margin-left: 1rem;
+}
+.event div * {
+  padding: 0.5rem;
+}
+.event div p:first-of-type {
+  padding-left: 1.5rem;
+}
+.eventdetails div {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px 20px;
+  align-items: start;
+  margin-top: 20px;
+}
+.eventdetails div p {
+  display: contents;
+}
+.eventdetails div p span:first-child {
+  grid-column: 1;
+}
+.eventdetails div p span:last-child {
+  grid-column: 2;
+}
+h1,
+h2 {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.weather {
+  background-color: var(--tertiary-color);
+}
+.currentweather div,
+.weatherforecast div {
+  padding: 1rem;
+}
+.currentweather div img {
+  width: 75px;
+  height: auto;
+}
+.currentweather div p,
+.weatherforecast div p {
+  padding: 1rem;
+  font-size: 125%;
+}
+.starMembers {
+  margin: 1rem;
+}
+.starMembers div {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+}
+.starMembers div * {
+  padding-bottom: 1rem;
+}
+.starMembers div p {
+  font-size: 1rem;
+}
+.starMembers img {
+  width: 80px;
+  height: auto;
+}
+/* THANK YOU PAGE */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+#container > p {
+  font-size: 2rem;
+}
+#container * {
+  margin: 1rem;
+}
+#results {
+  padding: 1rem;
+}
+/* JOIN PAGE */
+.wrapper{
+  padding:1rem;
+}
+.container {
+  color: black;
+  padding-left: 2%;
+  padding-top: 1%;
+}
+label {
+  display: block;
+  padding-top: 0.3rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 0.2rem;
+  width: 100%;
+  width: 400px;
+  appearance: none;
+  box-sizing: border-box;
+}
+#membership_level {
+  margin-top: 0.2rem;
+  display:flex;
+  flex-direction:column;
+}
+#membership_level label{
+  padding:0.5rem;
+}
+textarea {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+input[type="submit"] {
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 2% 2% 2rem 2%;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+select:required,
+input:required {
+  border-right: solid 8px red;
+}
+select:required:valid,
+input:required:valid {
+  border-right: solid 8px green;
+}
+.membership_info{
+  padding-left: 2%;
+  padding-top: 1%;
+  max-width: 400px;
+}
+.membership_info div{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  margin-bottom:1rem;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 15px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+.membership_info div:nth-child(1){
+  animation-delay: 0.3s;
+}
+.membership_info div:nth-child(2){
+  animation-delay: 0.6s;
+}
+.membership_info div:nth-child(3){
+  animation-delay: 0.9s;
+}
+.membership_info div:nth-child(4){
+  animation-delay: 1.2s;
+}
+@keyframes fadeIn{
+  to{
+    opacity: 1;
   }
-  .outfit-normal {
-    font-family: "Outfit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  :root {
-    --primary-color: #022a09;
-    --secondary-color: #ffffff;
-    --tertiary-color: rgb(236, 243, 241);
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0.5rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-  header div:first-of-type,  header div:nth-of-type(2){
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header div:first-of-type img{
-    width:80px;
-    height:auto;
-  }
-  header div:first-of-type div{
-    display:flex;
-    flex-direction: column;
-  }
-  header div:first-of-type div p{
-    margin-left: 2.2rem;
-    margin-bottom: 1.25rem;
-  }
-  header div:nth-of-type(2) img{
-    width: 40px;
-    height: auto;
-  }
-  nav {
+}
+.membership_info div p{
+  padding:1rem;
+}
+.membership_info div a{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+dialog {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin: 5rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+dialog *{
+  padding-bottom:1rem;
+}
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+dialog button {
+  position: absolute;
+  top: 15px;
+  right: 23px;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+footer div:first-of-type,
+footer div:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+footer div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  margin: 1rem;
+}
+footer div img {
+  width: 60px;
+  height: auto;
+  padding: 0.5rem;
+}
+footer p {
+  padding-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  #menu {
     display: none;
   }
-  nav span{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding:1rem 3.5rem;
-    background-color: var(--primary-color); 
-  }
-  nav a {
-    padding: 1rem 2rem;
-    text-align: center; 
-    text-decoration: none;
-    color: var(--secondary-color);
-  }
-  nav span{
-    overflow: hidden;
-  }
-  nav.open{
+  nav {
     display: grid;
     grid-template-rows: 1fr;
   }
-  nav a:hover {
-      text-decoration: underline double;
-    }
-  #menu {
-    background: none;
-    border: 0;
-    font-size: 2.5rem;
+  nav span {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+  nav a {
+    display: block;
+    padding-left: 5%;
     color: var(--secondary-color);
-    position: absolute;
-    right: 15%;
-    top: 2.3rem;
+    text-decoration: none;
   }
-  #menu::before {
-    content: "☰";
-    color: var(--secondary-color);
+  header div:nth-of-type(2) img {
+    margin-right: 1rem;
+    margin-left: 2rem;
   }
-  #menu.open::before {
-    content: "x";
-  }
-  #view::before{
-    content:"Change view to grid";
-  }
-  #view.grid::before{
-    content:"Change view to list";
-  }
-  #view{
-    margin:0.5rem;
-    padding:0.5rem;
-    width: 13vw;
-  }
-  .main div.grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-  .main div.grid div{
-    margin:1rem;
-  }
-  .main div.grid div p{
-    padding:0.5rem;
-  }
-  .main div.grid div img{
-    width:200px;
-    height:auto;
-    padding:0.5rem;
-  }
-  .main div ul{
-    display: flex;
-    flex-direction:column;
-  }
-  .main div ul li{
-    padding:1rem;
+  footer div:nth-of-type(2) {
+    flex-direction: row;
   }
 
   /* CHAMBER HOME PAGE */
-  .hero{
+  .container,
+  .weather,
+  .starMembers {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("../images/hero.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    min-height: 100vh; 
-    width: 100%;
-    font-size:120%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .hero *{
-    margin: 1rem 0;
+  .hero h2 {
+    width: 52.5vw;
   }
-  .event, .weather, .spotlight{
-    margin: 1rem;
-  }
-  .event{
-    display:flex;
-    flex-direction: column;
-  }
-  .event h2, .weather h2{
+  h2 {
+    width: 30vw;
     text-align: center;
   }
-  .event h3{
-    margin-left:1rem;
-  }
-  .event div *{
-    padding:0.5rem;
-  }
-  .event div p:first-of-type{
-    padding-left: 1.5rem;
-  }
-  .eventdetails div{
-    display:grid;
-    grid-template-columns: max-content 1fr;
-    gap: 10px 20px;
-    align-items: start;
-    margin-top: 20px;
-  }
-  .eventdetails div p{
-    display: contents;
-  }
-  .eventdetails div p span:first-child{
-    grid-column: 1;
-  }
-  .eventdetails div p span:last-child{
-    grid-column: 2;
-  }
-  h1, h2{
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    margin:1rem;
-    padding:1rem;
-    border-radius: 10px;
-  }
-  .weather{
-    background-color: var(--tertiary-color);
-  }
-  .currentweather div, .weatherforecast div{
-    padding:1rem;
-  }
-  .currentweather div img{
-    width: 75px;
-    height: auto;
-  }
-  .currentweather div p, .weatherforecast div p{
-    padding:1rem;
-    font-size: 125%;
-  }
-  .starMembers{
-    margin:1rem;
-  }
-  .starMembers div{
-    padding:1rem 2rem;
-    margin:1rem;
-    border:1px solid var(--primary-color);
-    border-radius:10px;
-    background-color: var(--tertiary-color);
-  }
-  .starMembers div *{
-    padding-bottom:1rem;
-  }
-  .starMembers div p{
-    font-size: 1rem;
-  }
-  .starMembers img{
-    width:80px;
-    height:auto;
-  }
-
-  footer{
-    display:flex;
+  .weather {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: var(--primary-color);
-    color:var(--secondary-color);
+    width: 100vw;
   }
-  footer div:first-of-type, footer div:nth-of-type(3){
-    display:flex;
-    flex-direction: column;
+  /* JOIN PAGE */
+  .wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .membership_info{
     margin:1rem;
+    padding:1rem;
   }
-  footer div:nth-of-type(2){
-    display:flex;
-    flex-direction:column;
-    cursor: pointer;
-    background-color: var(--secondary-color);
-    border-radius: 15px;
-    margin:1rem;
+  input[type="submit"]{
+    margin-top:2rem;
   }
-  footer div img{
-    width: 60px;
-    height:auto;
-    padding:0.5rem;
-  }
-  footer p{
-    padding-top:0.5rem;
-  }
-  @media screen and (min-width: 768px){
-    #menu {
-        display: none;
-      }
-      nav{
-        display:grid;
-        grid-template-rows: 1fr;
-      }
-      nav span{
-        flex-direction: row;
-        justify-content: center;
-        font-size: 1.25rem;
-      }
-      nav a {
-        display: block;
-        padding-left: 5%;
-        color: var(--secondary-color);
-        text-decoration: none;
-      }
-      header div:nth-of-type(2) img{
-        margin-right:1rem;
-        margin-left:2rem;
-      }
-      footer div:nth-of-type(2){
-        flex-direction: row;
-      }
-
-      /* CHAMBER HOME PAGE */
-      .container, .weather, .starMembers{
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-      }  
-      .hero h2{
-        width: 52.5vw;
-      }
-      h2{
-        width:30vw;
-        text-align: center;
-      }
-      .weather{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width:100vw;
-      }
-  }
-  
-
-  
+}
