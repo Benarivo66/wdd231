@@ -1,0 +1,61 @@
+.lora-normal {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .outfit-normal {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  :root {
+    --primary-color: #022a09;
+    --secondary-color: #ffffff;
+    --tertiary-color: #ECF3F1;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    padding:1rem;
+  }
+  .container > div{
+    margin:0.5rem 1rem;
+    padding:0.5rem;
+  }
+  h2{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding:0.5rem;
+    text-align: center;
+    border-radius:10px;
+  }
+  h1, #sitename{
+    width: 50vw;
+  }
+  h1{
+    margin: 0 auto;
+    padding:1rem;
+    text-align: center;
+  }
+  h2{
+    width: 20vw;
+  }
+  p{
+    padding:1rem;
+  }
+  .wireframe div{
+    display:flex;
+    justify-content: space-around;
+    margin:1.5rem 0;
+    padding:1rem;
+  }
+img{
+    width: 400px;
+    height: auto;
+}
+.wireframe div{
+    background-color: var(--tertiary-color);
+}

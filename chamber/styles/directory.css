@@ -11,7 +11,7 @@
 :root {
   --primary-color: #022a09;
   --secondary-color: #ffffff;
-  --tertiary-color: rgb(236, 243, 241);
+  --tertiary-color: #ECF3F1;
 }
 * {
   margin: 0;
