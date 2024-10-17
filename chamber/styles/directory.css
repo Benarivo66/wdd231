@@ -365,6 +365,70 @@ dialog button {
   padding: 0.5rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+/* DISCOVERY PAGE */
+.last-visited{
+  padding: 1rem;
+  text-align: center;
+}
+.discover-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sidebar{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--tertiary-color);
+  border: solid 1px var(--primary-color);
+  border-radius: 5px;
+}
+.sidebar > div{
+  padding-left: 1rem;
+  margin: 1rem;
+}
+.sidebar > div ul{
+  padding-left: 1.2rem
+}
+.sidebar > div ul li{
+  padding-top: 1rem;
+}
+.sidebar > div ul li ul{
+  padding-left: 1rem;
+}
+.sidebar h1, .sidebar h2{
+  border:none;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  margin: 0;
+  padding:0;
+}
+table{
+  padding-top:1rem;
+}
+th, td{
+  padding:0.5rem;
+}
+.attraction{
+  padding-top: 1rem;
+}
+.attraction *{
+  padding: 0.25rem;
+}
+.figure{
+  padding: 0.5rem;
+}
+figcaption{
+  padding: 0.5rem;
+}
+.mainpage{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+} 
+.mainpage img{
+  width: 98%;
+  height: auto;
+  border-radius: 5px;
+}
+/* FOOTER */
 footer {
   display: flex;
   justify-content: space-between;
@@ -453,4 +517,29 @@ footer p {
   input[type="submit"]{
     margin-top:2rem;
   }
+  /* DISCOVERY PAGE */
+  .discover-wrapper{
+    grid-template-columns: 1fr 2fr;
+  }
+ .sidebar{
+  grid-template-columns: 1fr;
+  height:200vh;
+  width:auto;
+ }
+ .mainpage figure{
+  width: 50%;
+  height: auto;
+}
+.mainpage figure img:hover{
+  filter: contrast(50%);
+}
+.mainpage figure img{
+  height: 70%;
+  width: 85%;
+}
+.mainpage{
+  display:flex;
+  flex-wrap: wrap;
+  height:200vh;
+}
 }
