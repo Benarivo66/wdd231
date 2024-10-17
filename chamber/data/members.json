@@ -4,7 +4,7 @@
       "address": "1234 Silicon Way, Suite 100, San Francisco, CA 94103",
       "phone": "+1-415-555-1234",
       "website": "https://www.techsolutions.com",
-      "image": "images/techsolution.jpeg",
+      "image": "images/techsolution.webp",
       "membership_level": "Bronze",
       "logo": "images/amtech.svg",
       "other_info": {
@@ -32,7 +32,7 @@
       "address": "234 Wellness Blvd, Miami, FL 33101",
       "phone": "+1-305-555-7654",
       "website": "https://www.healthylifepharmacy.com",
-      "image": "images/healthylifepharmacy.jpg",
+      "image": "images/healthylifepharmacy.webp",
       "membership_level": "Gold",
       "logo": "images/max.svg",
       "other_info": {
@@ -60,7 +60,7 @@
       "address": "321 Factory Lane, Detroit, MI 48201",
       "phone": "+1-313-555-5678",
       "website": "https://www.ecotechmanufacturing.com",
-      "image": "images/ecotech.jpg",
+      "image": "images/ecotech.webp",
       "membership_level": "Silver",
       "logo": "images/hubspot.svg",
       "other_info": {
@@ -74,7 +74,7 @@
       "address": "456 Ocean Drive, Honolulu, HI 96815",
       "phone": "+1-808-555-8765",
       "website": "https://www.bluehorizontravel.com",
-      "image": "images/bluehorinzon.jpg",
+      "image": "images/bluehorinzon.webp",
       "membership_level": "Gold",
       "logo": "images/tibco.svg",
       "other_info": {
@@ -88,7 +88,7 @@
       "address": "7890 Sky St, Seattle, WA 98101",
       "phone": "+1-206-555-0987",
       "website": "https://www.cloudwavetech.com",
-      "image": "images/cloudwavetech.jpg",
+      "image": "images/cloudwavetech.webp",
       "membership_level": "Bronze",
       "logo": "images/ac.svg",
       "other_info": {
