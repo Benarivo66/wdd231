@@ -11,6 +11,7 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 const currentPath = window.location.pathname;
+console.log(currentPath.split("/"))
 const currentPage = currentPath.split("/")[3];
 const navLinks = document.querySelectorAll('span a');
 navLinks.forEach(link => {

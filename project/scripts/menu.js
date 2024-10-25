@@ -108,6 +108,7 @@ const displayMenu = (data) => {
   }
 };
 const currentPath = window.location.pathname;
+console.log(currentPath.split("/"))
 const currentPage = currentPath.split("/")[3];
 links.forEach(elem => {
   if (elem.getAttribute('href') === currentPage) {

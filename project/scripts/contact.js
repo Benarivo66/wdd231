@@ -49,6 +49,7 @@ const d = new Date();
 const isoDate = d.toISOString();
 hiddenInput.value = isoDate;
 const currentPath = window.location.pathname;
+console.log(currentPath.split("/"))
 const currentPage = currentPath.split("/")[3];
 const navLinks = document.querySelectorAll('span a');
 navLinks.forEach(link => {
