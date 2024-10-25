@@ -98,6 +98,7 @@ const displayNutritionalTip = () => {
 };
 const currentPath = window.location.pathname;
 const currentPage = currentPath.split("/")[2];
+console.log(currentPage);
 const navLinks = document.querySelectorAll('span a');
 navLinks.forEach(link => {
   if (link.getAttribute('href') === currentPage) {
