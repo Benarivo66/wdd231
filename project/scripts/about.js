@@ -11,7 +11,7 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 const currentPath = window.location.pathname;
-const currentPage = currentPath.split("/")[2];
+const currentPage = currentPath.split("/")[3];
 const navLinks = document.querySelectorAll('span a');
 navLinks.forEach(link => {
   if (link.getAttribute('href') === currentPage) {
