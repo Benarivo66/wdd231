@@ -1,0 +1,33 @@
+{
+    "feedback": [
+      {
+        "img_src": "images/jessica_brown.webp",
+        "name": "Jessica Brown",
+        "occupation": "Software Developer",
+        "feedback": "Madam Rose's meals have been a lifesaver! With my busy schedule, her daily deliveries ensure I have fresh, delicious meals without the hassle of cooking. Highly recommend for anyone juggling a demanding job!",
+        "meal_plan": "Daily supply"
+      },
+      {
+        "img_src": "images/min_ann.webp",
+        "name": "Min Ann",
+        "occupation": "QA Engineer",
+        "feedback": "The customized supply option has been a great fit for me. I love that I can arrange meals when I need them, and Madam Rose always delivers the best quality food. It’s like having a personal chef!",
+        "meal_plan": "Customized supply"
+      },
+      {
+        "img_src": "images/adedeji_kudirat.webp",
+        "name": "Adedeji Kudirat",
+        "occupation": "Entrepreneur",
+        "feedback": "Madam Rose’s on-demand supply has been perfect for my unpredictable schedule. I just place an order when I need it, and I know I’ll get a nutritious, tasty meal on time. The convenience is unbeatable!",
+        "meal_plan": "On-demand supply"
+      },
+      {
+        "img_src": "images/eghe_osadolor.webp",
+        "name": "Eghe Osadolor",
+        "occupation": "Devops Engineer",
+        "feedback": "I’m on the daily meal plan, and it’s been such a relief. With two fresh meals a day, I don’t have to worry about cooking or meal prep anymore. The variety and taste are top-notch. Thanks, Madam Rose!",
+        "meal_plan": "Daily supply"
+      }
+    ]
+  }
+  
