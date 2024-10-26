@@ -96,8 +96,7 @@ const displayNutritionalTip = () => {
   const randomIndex = Math.floor(Math.random() * nutritionalTips.length);
   nutritionalTip.innerHTML = `<i>${nutritionalTips[randomIndex]}</i>`;
 };
-const currentPath = window.location.pathname;
-const currentPage = currentPath.split("/")[3];
+const currentPage = window.location.pathname.split("/").pop();
 const navLinks = document.querySelectorAll('span a');
 navLinks.forEach(link => {
   if (link.getAttribute('href') === currentPage) {

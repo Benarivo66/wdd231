@@ -48,9 +48,7 @@ const hiddenInput = document.querySelector('input[type="hidden"]');
 const d = new Date();
 const isoDate = d.toISOString();
 hiddenInput.value = isoDate;
-const currentPath = window.location.pathname;
-console.log(currentPath.split("/"))
-const currentPage = currentPath.split("/")[3];
+const currentPage = window.location.pathname.split("/").pop();
 const navLinks = document.querySelectorAll('span a');
 navLinks.forEach(link => {
   if (link.getAttribute('href') === currentPage) {

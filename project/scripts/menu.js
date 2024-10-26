@@ -29,22 +29,17 @@ const recipesOriginContent = {
   
   14: "Farro With Mushrooms and Asparagus @Country: Italy@Info: Farro, an ancient grain, has been used in Italy for centuries. Combined with mushrooms and asparagus, it creates a wholesome dish enjoyed in rustic Italian cooking."
 };
-
-
-
 const today = new Date();
 const currentyear = document.querySelector("#currentyear");
 const menu = document.getElementById("menu");
 const navg = document.querySelector("#animateme");
 const links = document.querySelectorAll("#animateme span a");
-
 const url =
   "https://api.spoonacular.com/recipes/complexSearch?apiKey=17059537322c4ee0b51c3079f566d5d0&number=15";
 const menuWrapper = document.querySelector(".menu-container");
 const view = document.querySelector("#view");
 const recipesOrigin = document.querySelector("#recipe-origin");
 let cachedData;
-
 currentyear.innerHTML = `©${today.getFullYear()} Madam Rose Restaurant`;
 const lastModified = document.querySelector("#lastModified");
 lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
@@ -52,7 +47,6 @@ menu.addEventListener("click", () => {
   navg.classList.toggle("open");
   menu.classList.toggle("open");
 });
-
 const fetchMenu = async () => {
   try {
     const response = await fetch(url);
@@ -66,14 +60,12 @@ const fetchMenu = async () => {
     console.log(error);
   }
 };
-
 view.addEventListener("click", () => {
   view.classList.toggle("grid");
   menuWrapper.classList.toggle("grid");
   menuWrapper.innerHTML = "";
   displayMenu(cachedData);
 });  
-
 const displayMenu = (data) => {
   data.results.forEach((elem, index) => {
     if (view.classList.contains("grid") === false) {
@@ -93,7 +85,6 @@ const displayMenu = (data) => {
       const div = document.createElement("div");
       const img = document.createElement("img");
       const p = document.createElement("p");
-
       img.setAttribute("loading", "lazy");
       img.setAttribute("src", elem.image);
       img.setAttribute("alt", elem.title);
@@ -102,20 +93,16 @@ const displayMenu = (data) => {
       menuWrapper.appendChild(div);
     }
   });
-
   if (view.classList.contains("grid") === false) {
     menuWrapper.appendChild(dialog);
   }
 };
-const currentPath = window.location.pathname;
-console.log(currentPath.split("/"))
-const currentPage = currentPath.split("/")[3];
+const currentPage = window.location.pathname.split("/").pop();
 links.forEach(elem => {
   if (elem.getAttribute('href') === currentPage) {
     elem.classList.add('active');
   }
 });
-
 const displayRecipeOrigin = (event)=>{
   event.preventDefault();
   recipesOrigin.innerHTML = "";
@@ -137,3 +124,4 @@ const displayRecipeOrigin = (event)=>{
   }
 };
 fetchMenu();
+
