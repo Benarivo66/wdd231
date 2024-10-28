@@ -32,6 +32,6 @@ else if(diffInDays() >= 1){
     lastVisitedElem.innerHTML = `<strong>You last visited ${diffInDays().toFixed(0)} days ago.</strong>`;
 }
 count += 1;
-localStorage.setItem("lastVisited", lastVisit);
+localStorage.setItem("lastVisited", currentDayMS);
 localStorage.setItem("counter", count);
 
