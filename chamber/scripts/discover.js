@@ -25,7 +25,7 @@ if(count === 0){
     lastVisitedElem.innerHTML = `<strong>Back so soon! Awesome!</strong>`;
 }
 else if(diffInDays() >= 1){
-    console.log(diffInDays().toFixed(0))
+    console.log(diffInDays().toFixed(0));
     if(parseInt(diffInDays().toFixed(0)) === 1)
     lastVisitedElem.innerHTML = `<strong>You last visited ${diffInDays().toFixed(0)} day ago.</strong>`;
     else

@@ -313,9 +313,10 @@ dialog * {
 }
 dialog button {
   position: absolute;
-  top: 15px;
+  top: 23px;
   right: 23px;
   padding: 0.5rem 1rem;
+  margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* ABOUT PAGE */
